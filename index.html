@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/assets.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="icon" href="img/logo.png" type="logo">
+  <title>Filipino Literature Timeline</title>
+</head>
+<body>
+  
+  <header class="topwrapper">
+    <nav class="navlinks-wrapper">
+      <div class="logo-container">Filipino Literature</div>
+  
+      <ul class="nav-links" id="nav-links">
+        <li class="links"><a href="#home">Home</a></li>
+        <li class="links"><a href="#about">About</a></li>
+        <li class="links"><a href="#reference">Reference</a></li>
+        <li class="links"><a href="#contact">Contact Me</a></li>
+      </ul>
+  
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-x"></i>
+      </div>
+    </nav>
+  </header>
+  
+
+  <!-- MID SECTION -->
+  <div class="mid-wrapper" id="home">
+    <div class="mid-content">
+      <h1 class="Typing"><span id="typing"></span></h1>
+      <p class="description">
+        Filipino literature evolves by blending tradition with modern technology. 
+        Digital storytelling, web novels, and spoken word poetry make literature more accessible.
+      </p>
+    </div>
+  </div>  
+
+  <!-- ABOUT SECTION -->
+  <div class="section" id="about">
+    <div class="about-content-container">
+      <h1 class="about-title">Kasaysayan ng Panitikang Pilipino</h1>
+      <p class="about-content">
+        Ang panitikan ng Pilipinas ay may mayamang kasaysayan na nahahati sa iba't ibang panahon. Bawat panahon ay may natatanging uri, paraan ng pagsulat, kahalagahan, tema, at mga halimbawa na sumasalamin sa kalagayan ng lipunan.
+      </p>
+    </div>
+
+    <div class="card-wrapper">
+      <!-- Pre-colonial Card -->
+      <div class="card-container">
+        <div class="img-container">
+          <img src="img/pre-colonial.webp" alt="Pre-colonial">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title">Pre-colonial</h1>
+          <p class="card-description">
+            Oral literature, alamat, epiko, at awiting-bayan.
+          </p>
+          <button class="btn" onclick="showDetails('precolonial')">Learn More</button>
+        </div>
+      </div>
+      <!-- Spanish Period Card -->
+      <div class="card-container">
+        <div class="img-container">
+          <img src="img/Espanyol.webp" alt="Espanyol">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title">Panahon ng Espanyol</h1>
+          <p class="card-description">
+            Panitikan ukol sa relihiyon at kolonyalismo.
+          </p>
+          <button class="btn" onclick="showDetails('spanish')">Learn More</button>
+        </div>
+      </div>
+      <!-- Revolutionary Period Card -->
+      <div class="card-container">
+        <div class="img-container">
+          <img src="img/philippine-revolution.webp" alt="Rebolusyon">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title">Panahon ng Rebolusyong Pilipino</h1>
+          <p class="card-description">
+            Mga akdang nagpasigla ng damdaming makabayan.
+          </p>
+          <button class="btn" onclick="showDetails('revolution')">Learn More</button>
+        </div>
+      </div>
+      <!-- Japanese Occupation Card -->
+      <div class="card-container">
+        <div class="img-container">
+          <img src="img/Japan.webp" alt="Hapon">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title">Panahon ng Hapon</h1>
+          <p class="card-description">
+            Mga anyo ng panitikan ukol sa digmaan at paghihirap.
+          </p>
+          <button class="btn" onclick="showDetails('japanese')">Learn More</button>
+        </div>
+      </div>
+      <!-- American Period Card -->
+      <div class="card-container">
+        <div class="img-container">
+          <img src="img/america.webp" alt="Amerikano">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title">Panahon ng Amerikano</h1>
+          <p class="card-description">
+            Paglaganap ng modernong anyo ng panitikan sa Ingles.
+          </p>
+          <button class="btn" onclick="showDetails('american')">Learn More</button>
+        </div>
+      </div>
+      <!-- Modern Period Card -->
+      <div class="card-container">
+        <div class="img-container">
+          <img src="img/LIPUNAN.webp" alt="Modern Era">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title">Panahon ng Kasalukuyan</h1>
+          <p class="card-description">
+            Social media literature at spoken word poetry.
+          </p>
+          <button class="btn" onclick="showDetails('modern')">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIMELINE SECTION -->
+  <div class="timeline-container">
+    <div class="timeline">
+      <div class="event" onclick="showDetails('precolonial')">
+          <h3>Pre-colonial</h3>
+      </div>
+      <div class="event" onclick="showDetails('spanish')">
+          <h3>Espanyol</h3>
+      </div>
+      <div class="event" onclick="showDetails('revolution')">
+          <h3>Rebolusyon</h3>
+      </div>
+      <div class="event" onclick="showDetails('japanese')">
+          <h3>Hapon</h3>
+      </div>
+      <div class="event" onclick="showDetails('american')">
+          <h3>Amerikano</h3>
+      </div>
+      <div class="event" onclick="showDetails('modern')">
+          <h3>Kasalukuyan</h3>
+      </div>
+    </div>
+  </div>
+
+ <!-- EVENT DETAILS MODAL -->
+<div id="event-details" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeDetails()">&times;</span>
+    <h2 id="event-title"></h2>
+    <p id="event-description"></p>
+
+    <!-- Baybayin Converter (Lalabas lang kapag Pre-colonial) -->
+    <div id="baybayin-section" style="display: none;">
+      <h3>Baybayin Converter</h3>
+      <input type="text" id="baybayinInput" placeholder="I-type ang salita" autocomplete="off">
+      <button class="btn" onclick="convertToBaybayin()">I-convert sa Baybayin</button>
+      <p id="baybayinOutput" class="baybayin-text"></p>
+    </div>
+  </div>
+</div>
+
+  <!-- REFERENCE SECTION -->
+  <!-- HTML -->
+<div class="reference-container" id="reference">
+  <h1>References</h1>
+  <p class="intro-text">The references below acknowledge the scholarly works, historical texts, and digital resources that informed the content of this project.</p>
+  
+  <div class="reference-list">
+    <div class="reference-item">
+      <p>Lumbera, B., & Lumbera, C. (2005). <em>Philippine Literature: A History and Anthology</em> (Revised ed.). Anvil Publishing.</p>
+    </div>
+    
+    <div class="reference-item">
+      <p>Mojares, R. B. (2006). <em>The Origins and Rise of the Filipino Novel: A Generic Study of the Novel Until 1940</em>. University of the Philippines Press.</p>
+    </div>
+
+    <!-- Add other references following the same structure -->
+    
+    <div class="reference-item">
+      <p>National Commission for Culture and the Arts (NCCA). (n.d.). <em>Philippine Literary Traditions</em>. Retrieved from <a href="https://philippineculturaleducation.com.ph">https://philippineculturaleducation.com.ph</a></p>
+    </div>
+
+    <div class="reference-item">
+      <p>Morrow, P. (2012). Baybayin: The Syllabic Alphabet of the Tagalogs.  <em>Baybayin writing</em>. Retrieved from <a href="https://www.baybayin.com">www.baybayin.com</a></p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <!--CONTACT PAGE -->
+  <div class="info-container" id="contact">
+  
+    <div class="description-container">
+      <h1 class="info-title">Let's Connect!</h1>
+      <p class="info-description">
+        Kumusta! Ako ay isang web developer na may hilig sa paglikha ng nakakaengganyo at interaktibong karanasan sa pag-aaral. Kasalukuyan akong gumagawa ng website na nagpapakita ng Panitikang Pilipino sa pamamagitan ng interactive na timeline. Dalubhasa ako sa pagdidisenyo ng malinis at epektibong user interface at pagbuo ng mga feature na nagpapalalim sa pagpapahalaga sa panitikan. Pinagsasama ko ang pagkamalikhain at teknolohiya upang mas madaling maunawaan ang Panitikang Pilipino. Patuloy din akong nag-aaral ng mga bagong teknolohiya at pinapabuti ang aking mga kasanayan sa UI/UX. Pag-usapan natin kung paano ko matutulungan ang iyong proyekto! Huwag mag-atubiling makipag-ugnayan para sa konsultasyon.
+      </p>
+    </div>
+
+    <div class="contact-methods">
+        <!-- Phone Section -->
+        <div class="contact-card">
+            <i class="fa-solid fa-phone"></i>
+            <h3>Call Me Directly</h3>
+            <p>+63 912 345 6789</p>
+            <button class="contact-btn">Call Now</button>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="contact-card">
+            <i class="fa-solid fa-comment-dots"></i>
+            <h3>Chat with Me</h3>
+            <p>Available Mon-Fri, 9AM-5PM PHT</p>
+            <button class="contact-btn">Start Chat</button>
+        </div>
+
+        <!-- Demo Section -->
+        <div class="contact-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Project Demo</h3>
+            <p>Schedule a live demo of my current projects</p>
+            <button class="contact-btn">Book Demo</button>
+        </div>
+    </div>
+
+    <div class="additional-info">
+        <p>See more ways to connect:</p>
+        <div class="social-links">
+            <a href="mailto:you@example.com" class="social-btn">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+            <a href="https://www.linkedin.com" class="social-btn">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://www.github.com" class="social-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </div>
+    </div>
+</div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

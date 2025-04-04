@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tagalog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+:root{
+  --font1 :"Barriecito", system-ui;
+  --font2 :"Bebas Neue", sans-serif;
+  --font3 :"Roboto", sans-serif;
+  --font4 : "Boldonse", system-ui;
+  --font5 : "Tektur", sans-serif;
+  --font6 : "Noto Sans Tagalog", sans-serif;
+  --font7 : 'Poppins', sans-serif;
+
+  --bgcolor1: #007AAD;
+  --bgcolor3: #784c3b;
+  --color1: #f5f4f4;
+  --color3 : #2c3e50;
+  --color2: #000;
+}
